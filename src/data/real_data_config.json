@@ -1,0 +1,52 @@
+{
+  "linux_auth": {
+    "enabled": true,
+    "log_files": [
+      "/var/log/auth.log",
+      "/var/log/secure"
+    ],
+    "poll_interval": 5,
+    "description": "Monitor SSH logins, sudo commands, authentication events"
+  },
+  "web_logs": {
+    "enabled": true,
+    "log_files": [
+      "/var/log/apache2/access.log",
+      "/var/log/nginx/access.log",
+      "/var/log/httpd/access_log"
+    ],
+    "poll_interval": 10,
+    "description": "Monitor web application access and downloads"
+  },
+  "database": {
+    "enabled": false,
+    "db_type": "mysql",
+    "log_files": [
+      "/var/log/mysql/mysql.log"
+    ],
+    "database": {
+      "host": "localhost",
+      "user": "monitor_user",
+      "password": "CHANGE_THIS",
+      "database": "mysql"
+    },
+    "poll_interval": 15,
+    "description": "Monitor database queries and suspicious SQL"
+  },
+  "file_monitoring": {
+    "enabled": false,
+    "watch_directories": [
+      "/home",
+      "/var/www",
+      "/opt"
+    ],
+    "file_extensions": [
+      ".txt",
+      ".doc",
+      ".pdf",
+      ".xlsx",
+      ".csv"
+    ],
+    "description": "Monitor file access and modifications"
+  }
+}

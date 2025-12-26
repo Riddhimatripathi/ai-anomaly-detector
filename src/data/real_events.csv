@@ -1,0 +1,2 @@
+timestamp,user_name,event_type,source_ip,success,source_connector,details
+2025-09-27T22:38:24.124792,system_user,system_activity,127.0.0.1,True,system_monitor,Real system monitoring active

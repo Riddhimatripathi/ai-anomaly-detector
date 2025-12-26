@@ -1,0 +1,4 @@
+timestamp,user_id,user_name,event_type,source_ip,location,country,device,success,file_name,file_size_mb,action
+2025-09-27T09:00:00,1,John Doe,login,192.168.1.100,New York,United States,LAPTOP-1,True,,,
+2025-09-27T09:30:00,1,John Doe,file_access,192.168.1.100,New York,United States,LAPTOP-1,True,report.xlsx,5,read
+2025-09-27T17:00:00,1,John Doe,logout,192.168.1.100,New York,United States,LAPTOP-1,True,,,
