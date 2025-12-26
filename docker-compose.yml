@@ -1,8 +1,7 @@
 version: '3.8'
-
 services:
   web:
-    build: .
+    image: riddhima02/ai-anomaly-web:latest
     container_name: anomaly-detector-web
     ports:
       - "5000:5000"
@@ -16,7 +15,7 @@ services:
     restart: unless-stopped
     
   monitor:
-    build: .
+    image: riddhima02/ai-anomaly-monitor:latest
     container_name: anomaly-detector-monitor
     command: python real_time_monitor.py
     volumes:
